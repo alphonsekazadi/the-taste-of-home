@@ -1,523 +1,400 @@
-/*
-
-Fufu
-
-Pondu
-
-Fish
-
-Palm oil
-
-Details
-
-*/
-
-/* CONGOLESE FUFU */
-
+/* ======================================================
+   CONGOLESE FUFU - AUTHENTIC TEXTURE
+====================================================== */
 
 .fufu{
-
     position:absolute;
-
     left:50%;
     top:50%;
-
-    transform:
-        translate(-50%,-42%);
-
-    width:330px;
-    height:180px;
-
+    transform: translate(-50%, -45%);
+    width: 280px;
+    height: 150px;
+    
     border-radius:
-
-        48%
-        52%
-        45%
-        55%
+        58% 42% 53% 47%
         /
-        55%
-        50%
-        45%
-        55%;
-
-
+        62% 48% 52% 38%;
+    
     background:
-
-    radial-gradient(
-        ellipse at 35% 25%,
-        #fff1b8 0%,
-        #f4d98a 25%,
-        #d9ad57 65%,
-        #bb873b 100%
-    );
-
-
+        radial-gradient(
+            ellipse at 35% 25%,
+            #f7e09a 0%,
+            #e8c875 30%,
+            #d4a94a 60%,
+            #ba8432 90%
+        ),
+        radial-gradient(
+            ellipse at 70% 60%,
+            #c4943f 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            ellipse at 20% 70%,
+            #a87a30 0%,
+            transparent 30%
+        );
+    
     box-shadow:
-
-        inset 0 18px 25px rgba(255,255,255,.35),
-
-        inset 0 -25px 35px rgba(110,65,15,.22),
-
-        0 12px 20px rgba(0,0,0,.15);
-
-
-    overflow:hidden;
-
+        inset 0 15px 25px rgba(255,255,220,.35),
+        inset 0 -20px 30px rgba(110,65,15,.25),
+        0 15px 25px rgba(0,0,0,.18);
+    
+    overflow: hidden;
+    z-index: 10;
+    
+    animation: fufu-breathe 6s ease-in-out infinite;
 }
 
-.fufu,
-.pondu,
-.fish,
-.palm-oil{
-
-    z-index:25;
-
-}
-
-/* NATURAL SURFACE LIGHT */
-
-
+/* Natural surface highlight */
 .fufu-highlight{
-
-
     position:absolute;
-
-    width:120px;
-    height:80px;
-
-
-    top:25px;
-    left:60px;
-
-
-    border-radius:50%;
-
-
+    width: 100px;
+    height: 70px;
+    top: 15px;
+    left: 45px;
+    border-radius: 50%;
     background:
-
-    radial-gradient(
-
-        ellipse,
-
-        rgba(255,255,220,.65),
-
-        transparent 70%
-
-    );
-
-
-    filter:blur(8px);
-
-
+        radial-gradient(
+            ellipse,
+            rgba(255,255,220,.5),
+            transparent 70%
+        );
+    filter: blur(8px);
+    z-index: 2;
 }
 
-
-
-/* FUFU FOLDS */
-
-
+/* Fufu folds - more pronounced and natural */
 .fufu-fold{
-
-
     position:absolute;
-
-
     background:
-
-    radial-gradient(
-
-        ellipse,
-
-        rgba(170,110,35,.25),
-
-        transparent 70%
-
-    );
-
-
-    filter:blur(6px);
-
+        radial-gradient(
+            ellipse,
+            rgba(140,90,30,.3),
+            transparent 70%
+        );
+    filter: blur(6px);
+    z-index: 1;
 }
-
-
-
-/* left fold */
 
 .fold-one{
-
-
-    width:90px;
-
-    height:45px;
-
-    left:45px;
-
-    bottom:35px;
-
-
-    transform:rotate(-25deg);
-
+    width: 80px;
+    height: 40px;
+    left: 30px;
+    bottom: 25px;
+    transform: rotate(-20deg);
 }
-
-
-
-/* middle fold */
 
 .fold-two{
-
-
-    width:110px;
-
-    height:40px;
-
-    left:130px;
-
-    bottom:20px;
-
-
-    transform:rotate(8deg);
-
+    width: 100px;
+    height: 35px;
+    left: 120px;
+    bottom: 15px;
+    transform: rotate(5deg);
 }
-
-
-
-/* right fold */
 
 .fold-three{
-
-
-    width:70px;
-
-    height:55px;
-
-    right:45px;
-
-    top:65px;
-
-
-    transform:rotate(30deg);
-
+    width: 65px;
+    height: 45px;
+    right: 30px;
+    top: 50px;
+    transform: rotate(25deg);
 }
 
-/* PONDU - CASSAVA LEAVES */
+/* Additional texture bumps */
+.fufu::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 25% 35%, rgba(255,255,200,.1) 0%, transparent 20%),
+        radial-gradient(circle at 75% 65%, rgba(180,130,50,.15) 0%, transparent 25%),
+        radial-gradient(circle at 50% 85%, rgba(160,110,40,.1) 0%, transparent 15%);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+/* ======================================================
+   AUTHENTIC PONDU / SAKA-SAKA (cassava leaves)
+====================================================== */
 
 .pondu{
-
     position:absolute;
-
-    left:55px;
-
-    bottom:35px;
-
-    width:150px;
-
-    height:80px;
-
-    z-index:8;
-
+    left: 15px;
+    bottom: 5px;
+    width: 230px;
+    height: 100px;
+    z-index: 8;
 }
-
-
 
 .pondu span{
-
-
     position:absolute;
-
-
     background:
-
-
-    radial-gradient(
-
-        ellipse,
-
-        #536b28,
-
-        #263713 70%
-
-    );
-
-
-    border-radius:40%;
-
-
+        radial-gradient(
+            ellipse,
+            #4a6b2a,
+            #1f3010 70%
+        );
+    border-radius: 45%;
     box-shadow:
-
-
-    inset 4px 5px 8px rgba(255,255,255,.15),
-
-    inset -5px -8px 10px rgba(0,0,0,.4);
-
-
+        inset 3px 4px 6px rgba(255,255,255,.12),
+        inset -4px -6px 8px rgba(0,0,0,.45);
 }
-
-
 
 .pondu span:nth-child(1){
-
-    width:80px;
-
-    height:45px;
-
-    left:10px;
-
-    top:25px;
-
-    transform:rotate(-10deg);
-
+    width: 75px;
+    height: 42px;
+    left: 5px;
+    top: 25px;
+    transform: rotate(-15deg);
 }
-
-
 
 .pondu span:nth-child(2){
-
-    width:90px;
-
-    height:50px;
-
-    left:45px;
-
-    top:5px;
-
-    transform:rotate(15deg);
-
+    width: 90px;
+    height: 48px;
+    left: 40px;
+    top: 5px;
+    transform: rotate(12deg);
 }
-
-
 
 .pondu span:nth-child(3){
-
-    width:70px;
-
-    height:40px;
-
-    left:80px;
-
-    top:35px;
-
-    transform:rotate(-20deg);
-
+    width: 70px;
+    height: 40px;
+    left: 85px;
+    top: 35px;
+    transform: rotate(-18deg);
 }
 
-/* SMOKED FISH */
+.pondu span:nth-child(4){
+    width: 60px;
+    height: 35px;
+    left: 130px;
+    top: 15px;
+    transform: rotate(8deg);
+}
 
+.pondu span:nth-child(5){
+    width: 55px;
+    height: 30px;
+    left: 155px;
+    top: 40px;
+    transform: rotate(-12deg);
+}
+
+/* ======================================================
+   SMOKED FISH - PROMINENT & ON TOP OF EVERYTHING
+====================================================== */
 
 .fish{
-
     position:absolute;
-
-
-    right:55px;
-
-    bottom:65px;
-
-
-    width:150px;
-
-    height:65px;
-
-
-    transform:
-
-    rotate(-18deg);
-
-
-    z-index:10;
-
+    right: 15px;
+    bottom: 50px;
+    width: 165px;
+    height: 80px;
+    z-index: 20; /* HIGHER than everything except steam */
+    
+    animation: fish-float 4s ease-in-out infinite;
 }
-
-
 
 .fish-body{
-
-
     position:absolute;
-
-
-    width:110px;
-
-    height:55px;
-
-
-    left:15px;
-
-
-    top:5px;
-
-
-    border-radius:
-
-    60% 40%
-
-    45% 55%;
-
-
+    right: 0;
+    bottom: 0;
+    width: 135px;
+    height: 58px;
+    
     background:
-
-
-    linear-gradient(
-
-        180deg,
-
-        #8c6b45,
-
-        #4b3420
-
-    );
-
-
+        radial-gradient(
+            ellipse at 30% 40%,
+            #c4a86a,
+            #8a6e3a 50%,
+            #5c4520 90%
+        );
+    
+    border-radius:
+        60% 40% 30% 70%
+        /
+        70% 60% 40% 30%;
+    
     box-shadow:
-
-
-    inset 0 8px 10px rgba(255,255,255,.15),
-
-    inset 0 -10px 15px rgba(0,0,0,.35);
-
-
+        inset 0 8px 12px rgba(255,215,150,.2),
+        inset 0 -10px 15px rgba(0,0,0,.3),
+        0 5px 15px rgba(0,0,0,.2);
 }
 
-
-
-/* fish tail */
-.fish{
-
+/* Smoked skin texture */
+.fish-body::after{
+    content: "";
     position:absolute;
-
-    right:35px;
-
-    bottom:55px;
-
-    width:150px;
-
-    height:70px;
-
-    z-index:15;
-
+    inset: 8px;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            transparent 5px,
+            rgba(255,220,180,.06) 6px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 8px,
+            rgba(255,200,150,.04) 9px
+        );
+    border-radius: inherit;
 }
 
 .fish-tail{
     position:absolute;
-    left:0;
-    top:15px;
-    width:40px;
-    height:40px;
-    clip-path:polygon(
-
-        100% 50%,
-
-        0 0,
-
-        20% 50%,
-
-        0 100%
-
-    );
-
-    background:#5b3d25;
-
-
+    right: 130px;
+    bottom: 15px;
+    width: 42px;
+    height: 32px;
+    
+    background: 
+        linear-gradient(180deg, #6a4f28, #4a3420);
+    border-radius:
+        0 80% 80% 0
+        /
+        0 70% 70% 0;
+    
+    transform: rotate(-18deg);
+    box-shadow: inset -3px 0 8px rgba(0,0,0,.3);
 }
 
-.fish-body{
-
-    width:120px;
-
-    height:60px;
-
+/* Fish eye */
+.fish-eye{
+    position: absolute;
+    right: 100px;
+    top: 22px;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle at 40% 40%, #fff, #1a1a1a 60%);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
 }
 
-.fish-body::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:10px;
-
-
-    background:
-
-    repeating-linear-gradient(
-
-        0deg,
-
-        transparent 0px,
-
-        transparent 8px,
-
-        rgba(255,255,255,.12) 9px
-
-    );
-
+.fish-eye::after{
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 4px;
+    height: 4px;
+    background: rgba(255,255,255,.8);
+    border-radius: 50%;
 }
-/* smoked highlight */
-
 
 .fish-highlight{
     position:absolute;
-    left:45px;
-    top:18px;
-    width:45px;
-    height:8px;
-    border-radius:50%;
+    right: 35px;
+    bottom: 35px;
+    width: 55px;
+    height: 22px;
     background:
-
-    rgba(255,220,160,.35);
-    filter:blur(4px);
+        radial-gradient(
+            ellipse,
+            rgba(255,220,170,.25),
+            transparent
+        );
+    filter: blur(4px);
+    border-radius: 50%;
 }
 
-/* PALM OIL REFLECTION */
-
+/* ======================================================
+   PALM OIL REFLECTION - NATURAL & GLOSSY
+====================================================== */
 
 .palm-oil{
-
-
     position:absolute;
-    right:100px;
-    top:45px;
-    width:55px;
-    height:35px;
-    border-radius:50%;
-    background: radial-gradient(
-
-        ellipse at 30% 30%,
-
-        #ffcf55,
-
-        #d87500 45%,
-
-        #8b3f00
-
-    );
-
-    opacity:.9;
-    transform:
-
-    rotate(-15deg);
-
-
-    box-shadow:
-
-
-    0 8px 15px rgba(0,0,0,.25),
-
-    inset 5px 5px 10px rgba(255,255,255,.35);
-
-
+    left: 65px;
+    bottom: 30px;
+    width: 90px;
+    height: 18px;
+    z-index: 12;
+    
+    background:
+        radial-gradient(
+            ellipse at 40% 50%,
+            rgba(220,120,30,.45),
+            rgba(180,80,20,.2) 50%,
+            transparent 70%
+        );
+    
+    border-radius: 50%;
+    filter: blur(2px);
+    
+    animation: palm-glow 3s ease-in-out infinite;
 }
 
-.radio,
-.basket,
-.glass,
-.spoon{
+/* Secondary palm oil spot */
+.palm-oil::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -5px;
+    width: 40px;
+    height: 12px;
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(200,100,25,.3),
+            transparent 70%
+        );
+    border-radius: 50%;
+    filter: blur(3px);
+}
 
-    opacity:.75;
+/* ======================================================
+   ANIMATIONS
+====================================================== */
 
+@keyframes fufu-breathe{
+    0%, 100%{
+        transform: translate(-50%, -45%) scale(1);
+    }
+    50%{
+        transform: translate(-50%, -45%) scale(1.015);
+    }
+}
+
+@keyframes fish-float{
+    0%, 100%{ 
+        transform: translateY(0) rotate(0deg);
+    }
+    50%{ 
+        transform: translateY(-4px) rotate(1deg);
+    }
+}
+
+@keyframes palm-glow{
+    0%, 100%{ opacity: 0.8; }
+    50%{ opacity: 1; }
+}
+
+/* ======================================================
+   FIX: ENSURE PROPER Z-INDEX LAYERING
+====================================================== */
+
+/* Make sure everything is layered correctly */
+.bowl-inner{
+    z-index: 5;
+}
+
+.fufu{
+    z-index: 10;
+}
+
+.pondu{
+    z-index: 8;
+}
+
+.fish{
+    z-index: 20;
+}
+
+.palm-oil{
+    z-index: 12;
 }
 
 .steam{
-
-    bottom:38%;
-
+    z-index: 30;
 }
