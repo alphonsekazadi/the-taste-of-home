@@ -226,3 +226,117 @@
     );
 
 }
+
+/* ======================================================
+   RAFFIA PLACEMAT
+====================================================== */
+
+.placemat{
+
+    position:absolute;
+
+    left:50%;
+    bottom:10%;
+
+    transform:translateX(-50%);
+
+    width:520px;
+    height:520px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle,
+            #d8b883 0%,
+            #c89f62 70%,
+            #b8884d 100%);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.18);
+
+    overflow:hidden;
+
+}
+
+/* Interior */
+
+.placemat-inner{
+
+    position:absolute;
+
+    inset:24px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle,
+            #e3c996 0%,
+            #cfab73 100%);
+
+}
+
+/* Radial weaving */
+
+.placemat-pattern{
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:50%;
+
+    background:
+
+        repeating-conic-gradient(
+
+            from 0deg,
+
+            rgba(255,255,255,.12) 0deg,
+
+            rgba(255,255,255,.12) 2deg,
+
+            transparent 2deg,
+
+            transparent 6deg
+
+        );
+
+    opacity:.65;
+
+}
+
+/* Braided border */
+
+.placemat::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:8px;
+
+    border-radius:50%;
+
+    border:10px solid rgba(122,76,31,.18);
+
+}
+
+/* Soft center shadow */
+
+.placemat::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:60px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(circle,
+            transparent 40%,
+            rgba(0,0,0,.06));
+
+}
