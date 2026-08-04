@@ -1,0 +1,37 @@
+:root{
+
+    /* Background */
+
+    --background:#FCFAF6;
+
+    --background-light:#FFFDFB;
+
+    /* Typography */
+
+    --title:#2C2017;
+
+    --text:#73665A;
+
+    /* Accent */
+
+    --accent:#B86822;
+
+    /* Stage */
+
+    --stage:#F5F0E8;
+
+    /* Shadows */
+
+    --shadow-soft:0 20px 60px rgba(44,32,23,.08);
+
+    --shadow-light:0 10px 30px rgba(44,32,23,.05);
+
+    /* Width */
+
+    --content-width:1280px;
+
+    /* Radius */
+
+    --radius:36px;
+
+}

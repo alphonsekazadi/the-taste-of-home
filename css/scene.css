@@ -1,0 +1,57 @@
+.scene{
+
+    width:min(92%,var(--content-width));
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 0 70px;
+
+}
+
+.art-stage{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    background:var(--stage);
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-soft);
+
+}
+
+/* Temporary helper */
+
+.art-stage::after{
+
+    content:"Artwork Coming Soon";
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#b2a291;
+
+    font-size:1.2rem;
+
+    letter-spacing:.15rem;
+
+}
