@@ -191,3 +191,310 @@ Details
     transform:rotate(30deg);
 
 }
+
+/* PONDU - CASSAVA LEAVES */
+
+
+.pondu{
+
+    position:absolute;
+
+    width:150px;
+    height:70px;
+
+    left:80px;
+    bottom:55px;
+
+    z-index:5;
+
+}
+
+
+
+.pondu span{
+
+
+    position:absolute;
+
+    width:65px;
+    height:35px;
+
+
+    border-radius:
+
+    80% 20%
+    80% 20%;
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #405c20,
+
+        #18290d
+
+    );
+
+
+    box-shadow:
+
+    inset 5px 5px 8px rgba(255,255,255,.15),
+
+    0 5px 10px rgba(0,0,0,.25);
+
+
+}
+
+
+
+.pondu span:nth-child(1){
+
+    left:0;
+
+    top:20px;
+
+    transform:rotate(-25deg);
+
+}
+
+
+.pondu span:nth-child(2){
+
+    left:40px;
+
+    top:0;
+
+    transform:rotate(20deg);
+
+}
+
+
+.pondu span:nth-child(3){
+
+    left:70px;
+
+    top:30px;
+
+    transform:rotate(-10deg);
+
+}
+
+
+.pondu span:nth-child(4){
+
+    left:100px;
+
+    top:10px;
+
+    transform:rotate(35deg);
+
+}
+
+/* SMOKED FISH */
+
+
+.fish{
+
+    position:absolute;
+
+
+    right:55px;
+
+    bottom:65px;
+
+
+    width:150px;
+
+    height:65px;
+
+
+    transform:
+
+    rotate(-18deg);
+
+
+    z-index:10;
+
+}
+
+
+
+.fish-body{
+
+
+    position:absolute;
+
+
+    width:110px;
+
+    height:55px;
+
+
+    left:15px;
+
+
+    top:5px;
+
+
+    border-radius:
+
+    60% 40%
+
+    45% 55%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #8c6b45,
+
+        #4b3420
+
+    );
+
+
+    box-shadow:
+
+
+    inset 0 8px 10px rgba(255,255,255,.15),
+
+    inset 0 -10px 15px rgba(0,0,0,.35);
+
+
+}
+
+
+
+/* fish tail */
+
+
+.fish-tail{
+
+
+    position:absolute;
+
+
+    left:0;
+
+    top:15px;
+
+
+    width:40px;
+
+    height:40px;
+
+
+    clip-path:polygon(
+
+        100% 50%,
+
+        0 0,
+
+        20% 50%,
+
+        0 100%
+
+    );
+
+
+    background:#5b3d25;
+
+
+}
+
+
+
+/* smoked highlight */
+
+
+.fish-highlight{
+
+
+    position:absolute;
+
+
+    left:45px;
+
+    top:18px;
+
+
+    width:45px;
+
+    height:8px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    rgba(255,220,160,.35);
+
+
+    filter:blur(4px);
+
+
+}
+
+/* PALM OIL REFLECTION */
+
+
+.palm-oil{
+
+
+    position:absolute;
+
+
+    right:100px;
+
+    top:45px;
+
+
+    width:55px;
+
+    height:35px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    radial-gradient(
+
+        ellipse at 30% 30%,
+
+        #ffcf55,
+
+        #d87500 45%,
+
+        #8b3f00
+
+    );
+
+
+    opacity:.9;
+
+
+    transform:
+
+    rotate(-15deg);
+
+
+    box-shadow:
+
+
+    0 8px 15px rgba(0,0,0,.25),
+
+    inset 5px 5px 10px rgba(255,255,255,.35);
+
+
+}
