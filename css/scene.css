@@ -1,22 +1,193 @@
-.scene{
+/* ======================================================
+   ART STAGE
+====================================================== */
 
-    width:min(92%,1200px);
+.scene {
 
-    margin:70px auto;
+    width: min(92%, 1200px);
+    margin: 70px auto;
 
 }
 
-.art-stage{
+.art-stage {
 
-    position:relative;
+    position: relative;
 
-    width:100%;
+    width: 100%;
+    aspect-ratio: 16 / 10;
 
-    aspect-ratio:16/10;
+    overflow: hidden;
+
+    border-radius: 40px;
+
+    background: #fbf8f3;
+
+    box-shadow:
+        0 40px 90px rgba(0,0,0,.08);
+
+}
+
+/* ======================================================
+   ATMOSPHERE
+====================================================== */
+
+.art-stage::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+        circle at 20% 15%,
+        rgba(255,221,160,.75),
+        transparent 40%
+    ),
+
+    radial-gradient(
+        circle at 85% 10%,
+        rgba(255,255,255,.55),
+        transparent 30%
+    );
+
+    pointer-events:none;
+
+}
+
+.art-stage::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+        circle,
+        transparent 60%,
+        rgba(0,0,0,.05)
+    );
+
+    pointer-events:none;
+
+}
+
+/* ======================================================
+   TABLE
+====================================================== */
+
+.table{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:58%;
 
     overflow:hidden;
 
-    border-radius:40px;
+}
+
+/* Main wood */
+
+.table-surface{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #b67843 0%,
+        #aa6d3e 30%,
+        #94592d 100%
+    );
+
+}
+
+/* Long wood planks */
+
+.table-surface::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.05) 0px,
+        rgba(255,255,255,.05) 2px,
+
+        transparent 2px,
+        transparent 180px,
+
+        rgba(0,0,0,.05) 180px,
+        rgba(0,0,0,.05) 183px,
+
+        transparent 183px,
+        transparent 360px
+
+    );
+
+    opacity:.55;
+
+}
+
+/* Wood grain */
+
+.table-surface::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.02) 0px,
+        rgba(255,255,255,.02) 3px,
+
+        rgba(0,0,0,.02) 4px,
+        rgba(0,0,0,.02) 6px,
+
+        transparent 7px,
+        transparent 12px
+
+    );
+
+    mix-blend-mode:soft-light;
+
+    opacity:.8;
+
+}
+
+/* Soft light */
+
+.table-light{
+
+    position:absolute;
+
+    inset:0;
 
     background:
 
@@ -24,14 +195,34 @@
 
         180deg,
 
-        #FFFDF9 0%,
+        rgba(255,255,255,.18),
 
-        #F5EFE7 100%
+        transparent 45%
 
     );
 
-    box-shadow:
+}
 
-    0 25px 80px rgba(0,0,0,.08);
+/* Bottom shadow */
+
+.table-shadow{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    top:0;
+
+    height:45px;
+
+    background:
+
+    linear-gradient(
+
+        rgba(0,0,0,.18),
+
+        transparent
+
+    );
 
 }
