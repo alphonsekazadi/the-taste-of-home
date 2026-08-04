@@ -340,3 +340,141 @@
             rgba(0,0,0,.06));
 
 }
+
+/* ======================================================
+   SUNLIGHT DUST PARTICLES
+====================================================== */
+
+
+.particles{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:5;
+
+}
+
+
+
+.particles span{
+
+
+    position:absolute;
+
+
+    width:5px;
+
+    height:5px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    rgba(255,230,170,.7);
+
+
+    filter:blur(.5px);
+
+
+    animation:
+
+    float-dust 10s infinite ease-in-out;
+
+
+}
+
+
+
+.particles span:nth-child(1){
+
+    left:20%;
+
+    top:25%;
+
+}
+
+
+.particles span:nth-child(2){
+
+    left:40%;
+
+    top:35%;
+
+    animation-delay:2s;
+
+}
+
+
+
+.particles span:nth-child(3){
+
+    left:70%;
+
+    top:20%;
+
+    animation-delay:4s;
+
+}
+
+
+
+.particles span:nth-child(4){
+
+    left:60%;
+
+    top:50%;
+
+    animation-delay:6s;
+
+}
+
+
+
+.particles span:nth-child(5){
+
+    left:85%;
+
+    top:40%;
+
+    animation-delay:3s;
+
+}
+
+
+
+@keyframes float-dust{
+
+
+    0%,
+    100%{
+
+        transform:
+
+        translateY(0);
+
+        opacity:.2;
+
+    }
+
+
+    50%{
+
+
+        transform:
+
+        translateY(-40px);
+
+
+        opacity:.8;
+
+
+    }
+
+
+}

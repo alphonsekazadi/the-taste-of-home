@@ -7,3 +7,192 @@ Steam blur
 Steam animation
 
 */
+
+/* ======================================================
+   WARM FOOD STEAM
+====================================================== */
+
+
+.steam{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:43%;
+
+    transform:translateX(-50%);
+
+
+    width:260px;
+
+    height:220px;
+
+
+    z-index:30;
+
+
+}
+
+
+
+/* Individual vapor */
+
+.steam-line{
+
+
+    position:absolute;
+
+
+    bottom:0;
+
+
+    width:45px;
+
+    height:160px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.55),
+
+        transparent
+
+    );
+
+
+    filter:
+
+    blur(12px);
+
+
+    opacity:.35;
+
+
+    animation:
+
+    steam-rise 7s infinite ease-in-out;
+
+
+}
+
+
+
+/* Left vapor */
+
+.steam-one{
+
+    left:35px;
+
+    animation-delay:0s;
+
+}
+
+
+
+/* Center vapor */
+
+.steam-two{
+
+    left:105px;
+
+    height:190px;
+
+    animation-delay:2s;
+
+}
+
+
+
+/* Right vapor */
+
+.steam-three{
+
+    left:175px;
+
+    height:140px;
+
+    animation-delay:4s;
+
+}
+
+
+
+/* ======================================================
+   NATURAL MOVEMENT
+====================================================== */
+
+
+@keyframes steam-rise{
+
+
+    0%{
+
+        transform:
+
+        translateY(30px)
+
+        translateX(0)
+
+        scale(.8);
+
+
+        opacity:0;
+
+    }
+
+
+
+    20%{
+
+        opacity:.45;
+
+    }
+
+
+
+    50%{
+
+
+        transform:
+
+        translateY(-60px)
+
+        translateX(20px)
+
+        scale(1.2);
+
+
+    }
+
+
+
+    100%{
+
+
+        transform:
+
+        translateY(-150px)
+
+        translateX(-15px)
+
+        scale(1.4);
+
+
+        opacity:0;
+
+
+    }
+
+
+}
