@@ -201,18 +201,19 @@ Details
 
 /* PONDU - CASSAVA LEAVES */
 
-
 .pondu{
 
     position:absolute;
 
+    left:55px;
+
+    bottom:35px;
+
     width:150px;
-    height:70px;
 
-    left:80px;
-    bottom:55px;
+    height:80px;
 
-    z-index:5;
+    z-index:8;
 
 }
 
@@ -223,34 +224,30 @@ Details
 
     position:absolute;
 
-    width:65px;
-    height:35px;
-
-
-    border-radius:
-
-    80% 20%
-    80% 20%;
-
 
     background:
 
-    linear-gradient(
 
-        135deg,
+    radial-gradient(
 
-        #405c20,
+        ellipse,
 
-        #18290d
+        #536b28,
+
+        #263713 70%
 
     );
 
 
+    border-radius:40%;
+
+
     box-shadow:
 
-    inset 5px 5px 8px rgba(255,255,255,.15),
 
-    0 5px 10px rgba(0,0,0,.25);
+    inset 4px 5px 8px rgba(255,255,255,.15),
+
+    inset -5px -8px 10px rgba(0,0,0,.4);
 
 
 }
@@ -259,44 +256,47 @@ Details
 
 .pondu span:nth-child(1){
 
-    left:0;
+    width:80px;
 
-    top:20px;
+    height:45px;
 
-    transform:rotate(-25deg);
+    left:10px;
 
-}
-
-
-.pondu span:nth-child(2){
-
-    left:40px;
-
-    top:0;
-
-    transform:rotate(20deg);
-
-}
-
-
-.pondu span:nth-child(3){
-
-    left:70px;
-
-    top:30px;
+    top:25px;
 
     transform:rotate(-10deg);
 
 }
 
 
-.pondu span:nth-child(4){
 
-    left:100px;
+.pondu span:nth-child(2){
 
-    top:10px;
+    width:90px;
 
-    transform:rotate(35deg);
+    height:50px;
+
+    left:45px;
+
+    top:5px;
+
+    transform:rotate(15deg);
+
+}
+
+
+
+.pondu span:nth-child(3){
+
+    width:70px;
+
+    height:40px;
+
+    left:80px;
+
+    top:35px;
+
+    transform:rotate(-20deg);
 
 }
 
@@ -380,24 +380,28 @@ Details
 
 
 /* fish tail */
-
-
-.fish-tail{
-
+.fish{
 
     position:absolute;
 
+    right:35px;
 
+    bottom:55px;
+
+    width:150px;
+
+    height:70px;
+
+    z-index:15;
+
+}
+
+.fish-tail{
+    position:absolute;
     left:0;
-
     top:15px;
-
-
     width:40px;
-
     height:40px;
-
-
     clip-path:polygon(
 
         100% 50%,
@@ -410,44 +414,57 @@ Details
 
     );
 
-
     background:#5b3d25;
 
 
 }
 
+.fish-body{
 
+    width:120px;
 
-/* smoked highlight */
+    height:60px;
 
+}
 
-.fish-highlight{
+.fish-body::after{
 
+    content:"";
 
     position:absolute;
 
-
-    left:45px;
-
-    top:18px;
-
-
-    width:45px;
-
-    height:8px;
-
-
-    border-radius:50%;
+    inset:10px;
 
 
     background:
 
+    repeating-linear-gradient(
+
+        0deg,
+
+        transparent 0px,
+
+        transparent 8px,
+
+        rgba(255,255,255,.12) 9px
+
+    );
+
+}
+/* smoked highlight */
+
+
+.fish-highlight{
+    position:absolute;
+    left:45px;
+    top:18px;
+    width:45px;
+    height:8px;
+    border-radius:50%;
+    background:
+
     rgba(255,220,160,.35);
-
-
     filter:blur(4px);
-
-
 }
 
 /* PALM OIL REFLECTION */
@@ -457,25 +474,12 @@ Details
 
 
     position:absolute;
-
-
     right:100px;
-
     top:45px;
-
-
     width:55px;
-
     height:35px;
-
-
     border-radius:50%;
-
-
-    background:
-
-
-    radial-gradient(
+    background: radial-gradient(
 
         ellipse at 30% 30%,
 
@@ -487,10 +491,7 @@ Details
 
     );
 
-
     opacity:.9;
-
-
     transform:
 
     rotate(-15deg);
@@ -503,5 +504,20 @@ Details
 
     inset 5px 5px 10px rgba(255,255,255,.35);
 
+
+}
+
+.radio,
+.basket,
+.glass,
+.spoon{
+
+    opacity:.75;
+
+}
+
+.steam{
+
+    bottom:38%;
 
 }
