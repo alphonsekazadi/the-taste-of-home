@@ -11,3 +11,183 @@ Palm oil
 Details
 
 */
+
+/* CONGOLESE FUFU */
+
+
+.fufu{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-42%);
+
+    width:330px;
+    height:180px;
+
+    border-radius:
+
+        48%
+        52%
+        45%
+        55%
+        /
+        55%
+        50%
+        45%
+        55%;
+
+
+    background:
+
+    radial-gradient(
+        ellipse at 35% 25%,
+        #fff1b8 0%,
+        #f4d98a 25%,
+        #d9ad57 65%,
+        #bb873b 100%
+    );
+
+
+    box-shadow:
+
+        inset 0 18px 25px rgba(255,255,255,.35),
+
+        inset 0 -25px 35px rgba(110,65,15,.22),
+
+        0 12px 20px rgba(0,0,0,.15);
+
+
+    overflow:hidden;
+
+}
+
+
+
+/* NATURAL SURFACE LIGHT */
+
+
+.fufu-highlight{
+
+
+    position:absolute;
+
+    width:120px;
+    height:80px;
+
+
+    top:25px;
+    left:60px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    radial-gradient(
+
+        ellipse,
+
+        rgba(255,255,220,.65),
+
+        transparent 70%
+
+    );
+
+
+    filter:blur(8px);
+
+
+}
+
+
+
+/* FUFU FOLDS */
+
+
+.fufu-fold{
+
+
+    position:absolute;
+
+
+    background:
+
+    radial-gradient(
+
+        ellipse,
+
+        rgba(170,110,35,.25),
+
+        transparent 70%
+
+    );
+
+
+    filter:blur(6px);
+
+}
+
+
+
+/* left fold */
+
+.fold-one{
+
+
+    width:90px;
+
+    height:45px;
+
+    left:45px;
+
+    bottom:35px;
+
+
+    transform:rotate(-25deg);
+
+}
+
+
+
+/* middle fold */
+
+.fold-two{
+
+
+    width:110px;
+
+    height:40px;
+
+    left:130px;
+
+    bottom:20px;
+
+
+    transform:rotate(8deg);
+
+}
+
+
+
+/* right fold */
+
+.fold-three{
+
+
+    width:70px;
+
+    height:55px;
+
+    right:45px;
+
+    top:65px;
+
+
+    transform:rotate(30deg);
+
+}

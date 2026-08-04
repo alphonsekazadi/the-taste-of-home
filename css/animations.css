@@ -7,3 +7,36 @@ Global animations
 Transitions
 
 */
+
+.fufu{
+
+    animation:
+
+        fufu-breathe 6s ease-in-out infinite;
+
+}
+
+
+
+@keyframes fufu-breathe{
+
+
+    0%,
+    100%{
+
+        transform:
+        translate(-50%,-42%)
+        scale(1);
+
+    }
+
+
+    50%{
+
+        transform:
+        translate(-50%,-42%)
+        scale(1.015);
+
+    }
+
+}
