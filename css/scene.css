@@ -1,16 +1,8 @@
 .scene{
 
-    width:min(92%,var(--content-width));
+    width:min(92%,1200px);
 
-    flex:1;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:40px 0 70px;
+    margin:70px auto;
 
 }
 
@@ -20,38 +12,26 @@
 
     width:100%;
 
-    aspect-ratio:16/9;
-
-    background:var(--stage);
-
-    border-radius:var(--radius);
+    aspect-ratio:16/10;
 
     overflow:hidden;
 
-    box-shadow:var(--shadow-soft);
+    border-radius:40px;
 
-}
+    background:
 
-/* Temporary helper */
+    linear-gradient(
 
-.art-stage::after{
+        180deg,
 
-    content:"Artwork Coming Soon";
+        #FFFDF9 0%,
 
-    position:absolute;
+        #F5EFE7 100%
 
-    inset:0;
+    );
 
-    display:flex;
+    box-shadow:
 
-    justify-content:center;
-
-    align-items:center;
-
-    color:#b2a291;
-
-    font-size:1.2rem;
-
-    letter-spacing:.15rem;
+    0 25px 80px rgba(0,0,0,.08);
 
 }

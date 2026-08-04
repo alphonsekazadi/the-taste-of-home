@@ -2,15 +2,9 @@ body{
 
     background:var(--background);
 
-    font-family:"Inter",sans-serif;
-
     color:var(--text);
 
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
+    font-family:"Inter",sans-serif;
 
     overflow-x:hidden;
 
@@ -18,25 +12,47 @@ body{
 
 }
 
-/* Decorative light */
+/* --------------------------- */
+/* Background                  */
+/* --------------------------- */
 
 .background-glow{
 
     position:fixed;
 
-    width:700px;
+    width:900px;
 
-    height:700px;
+    height:900px;
+
+    left:-250px;
+
+    top:-250px;
 
     background:
 
     radial-gradient(circle,
-    rgba(255,213,128,.18) 0%,
+    rgba(236,188,108,.18),
     transparent 70%);
 
-    top:-260px;
+    pointer-events:none;
 
-    left:-150px;
+    z-index:-2;
+
+}
+
+.noise{
+
+    position:fixed;
+
+    inset:0;
+
+    opacity:.035;
+
+    background-image:
+
+    radial-gradient(circle at 20% 20%,#000 1px,transparent 1px);
+
+    background-size:24px 24px;
 
     pointer-events:none;
 
@@ -44,62 +60,223 @@ body{
 
 }
 
+/* --------------------------- */
+/* Hero                        */
+/* --------------------------- */
+
 .hero{
 
-    width:min(92%,var(--content-width));
+    width:min(92%,1200px);
+
+    margin:auto;
+
+    padding-top:70px;
 
     text-align:center;
 
-    padding-top:60px;
+}
+
+.hero-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:45px;
 
 }
 
-.eyebrow{
-
-    text-transform:uppercase;
-
-    letter-spacing:.25rem;
-
-    color:var(--accent);
+.edition,
+.year{
 
     font-size:.8rem;
 
-    font-weight:600;
+    letter-spacing:.35rem;
+
+    text-transform:uppercase;
+
+    color:#A67C52;
 
 }
 
+/* --------------------------- */
+/* Title                       */
+/* --------------------------- */
+
 .hero h1{
 
-    margin-top:18px;
+    display:flex;
 
-    font-size:clamp(3rem,7vw,5.8rem);
+    flex-direction:column;
+
+    align-items:center;
+
+    line-height:.85;
 
     font-family:"Cormorant Garamond",serif;
 
     color:var(--title);
 
-    line-height:.95;
+}
+
+.line-one{
+
+    font-size:2rem;
+
+    font-weight:500;
 
 }
+
+.line-two{
+
+    font-size:7rem;
+
+    font-weight:700;
+
+}
+
+.line-three{
+
+    margin-top:-10px;
+
+    font-size:3rem;
+
+    font-weight:500;
+
+}
+
+/* --------------------------- */
 
 .subtitle{
 
-    margin:24px auto 0;
+    width:min(700px,100%);
 
-    max-width:700px;
+    margin:35px auto;
 
     line-height:1.8;
 
-    font-size:1.1rem;
+    font-size:1.05rem;
+
+    color:#74675B;
 
 }
 
+/* --------------------------- */
+
+.divider{
+
+    width:180px;
+
+    height:1px;
+
+    background:#D8C8B4;
+
+    margin:40px auto;
+
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    width:14px;
+
+    height:14px;
+
+    border:2px solid #C79A63;
+
+    background:white;
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+
+    translate(-50%,-50%)
+
+    rotate(45deg);
+
+}
+
+/* --------------------------- */
+
+blockquote{
+
+    width:min(650px,100%);
+
+    margin:auto;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:1.6rem;
+
+    line-height:1.5;
+
+    color:#53483D;
+
+    font-style:italic;
+
+}
+
+/* --------------------------- */
+
 footer{
 
-    margin:40px 0;
+    width:min(92%,1200px);
 
-    font-size:.9rem;
+    margin:70px auto 40px;
 
-    opacity:.7;
+    display:flex;
+
+    justify-content:center;
+
+    color:#8C7A67;
+
+    font-size:.95rem;
+
+}
+
+footer strong{
+
+    color:#4C3D30;
+
+}
+
+/* --------------------------- */
+
+@media(max-width:900px){
+
+.line-two{
+
+font-size:5rem;
+
+}
+
+.line-three{
+
+font-size:2.2rem;
+
+}
+
+blockquote{
+
+font-size:1.3rem;
+
+}
+
+.hero-top{
+
+flex-direction:column;
+
+gap:10px;
+
+}
 
 }
