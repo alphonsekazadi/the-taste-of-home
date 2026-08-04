@@ -280,3 +280,108 @@ gap:10px;
 }
 
 }
+
+/* PAPER / FILM GRAIN */
+
+
+.noise{
+
+    position:fixed;
+
+    inset:0;
+
+
+    pointer-events:none;
+
+
+    z-index:100;
+
+
+    opacity:.08;
+
+
+    background-image:
+
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+
+
+}
+
+.art-stage::before{
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle at 20% 10%,
+
+        rgba(255,220,150,.4),
+
+        transparent 45%
+
+    ),
+
+    radial-gradient(
+
+        circle at 80% 80%,
+
+        rgba(120,70,20,.15),
+
+        transparent 50%
+
+    );
+
+
+}
+
+/* Responsive adjustments for smaller screens */
+
+@media(max-width:700px){
+
+
+.art-stage{
+
+    aspect-ratio:
+
+    4 / 5;
+
+}
+
+
+
+.bowl{
+
+    transform:
+
+    translateX(-50%)
+
+    scale(.65);
+
+}
+
+
+
+.placemat{
+
+    transform:
+
+    translateX(-50%)
+
+    scale(.7);
+
+}
+
+
+
+.window{
+
+    transform:
+
+    scale(.7);
+
+}
+
+
+}

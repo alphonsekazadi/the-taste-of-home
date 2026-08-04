@@ -52,6 +52,43 @@ The ceramic bowl
 
     filter:blur(12px);
 
+    animation: shadow-breathe 6s infinite ease-in-out;
+
+}
+@keyframes shadow-breathe{
+
+
+    0%,
+    100%{
+
+        transform:
+
+        translateX(-50%)
+
+        scale(1);
+
+
+        opacity:.7;
+
+    }
+
+
+
+    50%{
+
+
+        transform:
+
+        translateX(-50%)
+
+        scale(.92);
+
+
+        opacity:.5;
+
+    }
+
+
 }
 
 /* OUTER CERAMIC                            */

@@ -12,18 +12,54 @@
 .art-stage {
 
     position: relative;
-
     width: 100%;
     aspect-ratio: 16 / 10;
-
     overflow: hidden;
-
+    isolation: isolate;
     border-radius: 40px;
-
     background: #fbf8f3;
-
     box-shadow:
         0 40px 90px rgba(0,0,0,.08);
+
+}
+
+/* Background atmosphere */
+
+.window,
+.radio,
+.basket{
+
+    filter:
+
+    blur(.4px);
+
+}
+
+.table,
+.placemat,
+.bowl,
+.steam{
+
+
+    transform:
+
+    translate(
+        var(--mouse-x),
+        var(--mouse-y)
+    );
+
+
+}
+
+/* Hero focus */
+
+.bowl{
+
+    filter:
+
+    drop-shadow(
+        0 25px 30px rgba(0,0,0,.2)
+    );
 
 }
 

@@ -1,15 +1,59 @@
-"use strict";
+const stage = document.querySelector(".art-stage");
 
-/*
 
-Future interactions
+stage.addEventListener("mousemove",(event)=>{
 
-Mouse movement
 
-Lighting
+    const rect = stage.getBoundingClientRect();
 
-Steam intensity
 
-*/
+    const x =
+    event.clientX - rect.left;
 
-console.log("The Taste of Home");
+
+    const y =
+    event.clientY - rect.top;
+
+
+
+    const moveX =
+    (x / rect.width - .5) * 8;
+
+
+    const moveY =
+    (y / rect.height - .5) * 8;
+
+
+
+    stage.style.setProperty(
+        "--mouse-x",
+        `${moveX}px`
+    );
+
+
+    stage.style.setProperty(
+        "--mouse-y",
+        `${moveY}px`
+    );
+
+
+});
+
+
+
+stage.addEventListener("mouseleave",()=>{
+
+
+    stage.style.setProperty(
+        "--mouse-x",
+        "0px"
+    );
+
+
+    stage.style.setProperty(
+        "--mouse-y",
+        "0px"
+    );
+
+
+});
