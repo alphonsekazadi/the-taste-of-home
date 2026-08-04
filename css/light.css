@@ -1,0 +1,236 @@
+/* KITCHEN WINDOW */
+
+
+.window{
+
+    position:absolute;
+
+    top:50px;
+
+    left:80px;
+
+
+    width:260px;
+
+    height:230px;
+
+
+    z-index:1;
+
+
+}
+
+
+
+/* Window glass */
+
+.window-glow{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #ffe5a6,
+
+        #ffd27a,
+
+        #fff1c7
+
+    );
+
+
+    opacity:.65;
+
+
+    box-shadow:
+
+    0 0 80px rgba(255,190,80,.7);
+
+
+}
+
+
+
+/* Wooden frame */
+
+
+.window-frame{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    border:18px solid #70421f;
+
+
+    box-shadow:
+
+
+    inset 0 0 20px rgba(0,0,0,.35);
+
+
+}
+
+
+
+/* Cross division */
+
+
+.window-frame::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:50%;
+
+    left:0;
+
+    right:0;
+
+
+    height:12px;
+
+
+    background:#70421f;
+
+
+}
+
+
+
+.window-frame::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:50%;
+
+
+    top:0;
+
+    bottom:0;
+
+
+    width:12px;
+
+
+    background:#70421f;
+
+
+}
+
+/* VOLUMETRIC SUNLIGHT */
+
+
+.sun-rays{
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:0;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    pointer-events:none;
+
+
+    z-index:4;
+
+
+    background:
+
+
+    linear-gradient(
+
+        120deg,
+
+        rgba(255,220,150,.25),
+
+        transparent 35%
+
+    );
+
+
+
+    clip-path:polygon(
+
+        0 0,
+
+        55% 0,
+
+        70% 70%,
+
+        35% 100%
+
+    );
+
+
+
+    animation:
+
+    sunlight-move 12s infinite alternate ease-in-out;
+
+
+}
+
+
+
+@keyframes sunlight-move{
+
+
+    from{
+
+
+        transform:
+
+        translateX(-20px);
+
+
+        opacity:.5;
+
+
+    }
+
+
+
+    to{
+
+
+        transform:
+
+        translateX(20px);
+
+
+        opacity:.8;
+
+
+    }
+
+
+}
