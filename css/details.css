@@ -1,0 +1,425 @@
+/* GRANDMOTHER KITCHEN OBJECTS */
+
+
+/* RAFFIA BASKET */
+
+
+.basket{
+
+    position:absolute;
+
+    left:80px;
+
+    bottom:80px;
+
+
+    width:170px;
+
+    height:130px;
+
+
+    z-index:15;
+
+
+}
+
+
+
+.basket-body{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    border-radius:
+
+    20% 20%
+
+    45% 45%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #c89a55,
+
+        #8b5728
+
+    );
+
+
+    box-shadow:
+
+    inset 0 10px 15px rgba(255,255,255,.25),
+
+    0 20px 30px rgba(0,0,0,.2);
+
+}
+
+
+
+.basket-pattern{
+
+
+    position:absolute;
+
+    inset:10px;
+
+
+    background:
+
+
+    repeating-linear-gradient(
+
+        45deg,
+
+        rgba(255,255,255,.15) 0,
+
+        rgba(255,255,255,.15) 4px,
+
+        transparent 4px,
+
+        transparent 12px
+
+    );
+
+
+    border-radius:20px;
+
+}
+
+/* WOODEN SPOON */
+
+
+.spoon{
+
+
+    position:absolute;
+
+    right:160px;
+
+    bottom:100px;
+
+
+    width:40px;
+
+    height:180px;
+
+
+    transform:rotate(25deg);
+
+
+    z-index:20;
+
+}
+
+
+
+.spoon-handle{
+
+
+    position:absolute;
+
+
+    bottom:0;
+
+    left:15px;
+
+
+    width:12px;
+
+    height:120px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        #8a5529,
+
+        #d09a58
+
+    );
+
+}
+
+
+
+.spoon-head{
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:-5px;
+
+
+    width:50px;
+
+    height:70px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #d9a766,
+
+        #805020
+
+    );
+
+
+    box-shadow:
+
+    inset 0 8px 10px rgba(255,255,255,.25);
+
+}
+
+/* GLASS OF WATER */
+
+
+.glass{
+
+
+    position:absolute;
+
+
+    right:70px;
+
+    bottom:90px;
+
+
+    width:70px;
+
+    height:110px;
+
+
+    border-radius:
+
+    10px 10px 25px 25px;
+
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.25),
+
+        rgba(255,255,255,.65)
+
+    );
+
+
+    border:3px solid rgba(255,255,255,.5);
+
+
+    backdrop-filter:blur(5px);
+
+
+    z-index:20;
+
+}
+
+
+
+.water{
+
+
+    position:absolute;
+
+
+    bottom:0;
+
+
+    width:100%;
+
+    height:55%;
+
+
+    background:
+
+    linear-gradient(
+
+        #b9e5ef,
+
+        #70b8d1
+
+    );
+
+
+    opacity:.7;
+
+}
+
+/* OLD RADIO */
+
+
+.radio{
+
+
+    position:absolute;
+
+
+    left:300px;
+
+    bottom:70px;
+
+
+    width:130px;
+
+    height:80px;
+
+
+    border-radius:12px;
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #5a351b,
+
+        #2b170c
+
+    );
+
+
+    box-shadow:
+
+    0 15px 25px rgba(0,0,0,.3);
+
+
+}
+
+
+
+.radio-speaker{
+
+
+    position:absolute;
+
+
+    left:20px;
+
+    top:20px;
+
+
+    width:55px;
+
+    height:40px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    repeating-radial-gradient(
+
+        circle,
+
+        #111,
+
+        #111 3px,
+
+        #333 5px
+
+    );
+
+}
+
+
+
+.radio-button{
+
+
+    position:absolute;
+
+
+    right:20px;
+
+    top:25px;
+
+
+    width:12px;
+
+    height:12px;
+
+
+    border-radius:50%;
+
+
+    background:#d6a24a;
+
+}
+
+/* SMALL CLOTH */
+
+
+.cloth{
+
+
+    position:absolute;
+
+
+    right:260px;
+
+    bottom:70px;
+
+
+    width:140px;
+
+    height:70px;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #eee0c7,
+
+        #cdb99a
+
+    );
+
+
+    transform:
+
+    rotate(-12deg);
+
+
+    border-radius:8px;
+
+
+    box-shadow:
+
+    0 15px 20px rgba(0,0,0,.18);
+
+
+}
