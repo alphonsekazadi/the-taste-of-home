@@ -1,39 +1,80 @@
-![the hero section](taste-of-home.png)
-![scene](scene.png)
 # The Taste of Home
 
-A handcrafted CSS art project celebrating Congolese cuisine through a warm, nostalgic table scene.
+> A handcrafted CSS artwork celebrating the warmth of Congolese cuisine.
 
-## What it is
+<p align="center">
+  <img src="taste-of-home.png" alt="The Taste of Home CSS Art" width="900">
+   <img src="scene.png" alt="The Taste of Home CSS Art" width="900">
+</p>
 
-- A pure HTML and CSS illustration.
-- Features a ceramic bowl of fufu, cooked pondu, smoked fish, steam, and subtle background details.
-- Uses gradients, shadows, pseudo-elements, and animation for depth and motion.
+## About
 
-## Highlights
+**The Taste of Home** is a digital illustration built almost entirely with HTML and CSS.
 
-- Responsive layout for desktop and mobile.
-- Animated steam and entrance transitions.
-- Focused visual hierarchy: bowl, fufu, pondu, fish.
-- Styled entirely with CSS, no images for the main artwork.
+The artwork recreates a warm family dining scene inspired by Congolese cuisine, featuring:
 
-## Files
+- 🍚 Freshly prepared fufu
+- 🌿 Pondu (cassava leaves)
+- 🐟 Smoked fish
+- ♨️ Animated steam
+- 🪵 A handcrafted wooden table
+- 🧺 A woven raffia placemat
+- 🥣 A realistic ceramic bowl
 
-- `index.html` – page structure and artwork markup
-- `css/main.css` – global layout and hero styles
-- `css/scene.css` – stage, table, placemat, and responsive rules
-- `css/bowl.css` – bowl and interior shading
-- `css/food.css` – fufu, pondu, fish, palm oil
-- `css/steam.css` – steam particles and animation
-- `css/animations.css` – entrance and breathing animations
+Every element is created using CSS gradients, shadows, pseudo-elements, border-radius manipulation, and carefully layered compositions.
 
-## Run
+---
 
-1. Open `index.html` in a modern browser.
-2. Or use a local web server such as Live Server in VS Code.
-3. View the live demo at: [https://the-taste-of-home.vercel.app/](https://the-taste-of-home.vercel.app/)
+## Live Demo
 
-## Notes
+**https://the-taste-of-home.vercel.app/**
 
-- Best viewed in Chrome, Firefox, or Edge.
-- Adjust the browser width to see the responsive mobile layout.
+---
+
+## Project Structure
+
+```
+.
+├── index.html
+├── css
+│   ├── reset.css
+│   ├── variables.css
+│   ├── main.css
+│   ├── scene.css
+│   ├── bowl.css
+│   ├── food.css
+│   ├── steam.css
+│   └── animations.css
+├── js
+└── assets
+```
+
+---
+
+## CSS Techniques
+
+- Multiple radial gradients
+- Linear gradients
+- Repeating gradients
+- Pseudo-elements
+- Layered box-shadows
+- Custom border-radius
+- CSS animations
+- Transform & filter effects
+- Responsive layout
+
+---
+
+## Responsive
+
+The artwork adapts to desktop, tablet, and mobile screens while preserving its composition.
+
+---
+
+## License
+
+MIT
+
+---
+
+Made with ❤️ by Alphonse Kazadi.
