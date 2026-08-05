@@ -126,11 +126,10 @@
 
 .pondu {
     position: absolute;
-    bottom: 11%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 78%;
-    height: 42%;
+    bottom: 16%;
+    left: 10%;
+    width: 170px;
+    height: 100px;
     z-index: 8;
     
     background: 
@@ -236,7 +235,7 @@
 
 .fish {
     position: absolute;
-    bottom: 12%;
+    bottom: 16%;
     right: 14%;
     width: 142px;
     height: 58px;
