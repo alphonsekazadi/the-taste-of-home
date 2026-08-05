@@ -5,8 +5,8 @@
 .fufu{
     position:absolute;
     left:50%;
-    top:50%;
-    transform: translate(-50%, -45%);
+    top:45%;
+    transform: translate(-50%, -20%);
     width: 280px;
     height: 150px;
     
@@ -18,26 +18,31 @@
     background:
         radial-gradient(
             ellipse at 35% 25%,
-            #f7e09a 0%,
-            #e8c875 30%,
-            #d4a94a 60%,
-            #ba8432 90%
+            #f2d392 0%,
+            #d4a94a 26%,
+            #b07a2d 55%,
+            #8a5d22 92%
         ),
         radial-gradient(
-            ellipse at 70% 60%,
-            #c4943f 0%,
-            transparent 40%
+            ellipse at 65% 55%,
+            rgba(255,240,190,.65) 0%,
+            transparent 32%
         ),
         radial-gradient(
-            ellipse at 20% 70%,
-            #a87a30 0%,
-            transparent 30%
+            circle at 18% 78%,
+            rgba(160,105,45,.18) 0%,
+            transparent 16%
+        ),
+        radial-gradient(
+            circle at 75% 35%,
+            rgba(220,170,105,.16) 0%,
+            transparent 18%
         );
     
     box-shadow:
-        inset 0 15px 25px rgba(255,255,220,.35),
-        inset 0 -20px 30px rgba(110,65,15,.25),
-        0 15px 25px rgba(0,0,0,.18);
+        inset 0 18px 30px rgba(255,255,220,.35),
+        inset 0 -20px 35px rgba(90,50,15,.32),
+        0 18px 30px rgba(0,0,0,.18);
     
     overflow: hidden;
     z-index: 10;
@@ -106,9 +111,11 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at 25% 35%, rgba(255,255,200,.1) 0%, transparent 20%),
-        radial-gradient(circle at 75% 65%, rgba(180,130,50,.15) 0%, transparent 25%),
-        radial-gradient(circle at 50% 85%, rgba(160,110,40,.1) 0%, transparent 15%);
+        radial-gradient(circle at 20% 25%, rgba(255,255,220,.12) 0%, transparent 12%),
+        radial-gradient(circle at 45% 60%, rgba(160,105,45,.18) 0%, transparent 14%),
+        radial-gradient(circle at 68% 35%, rgba(255,240,190,.12) 0%, transparent 12%),
+        radial-gradient(circle at 25% 80%, rgba(150,90,30,.16) 0%, transparent 16%),
+        radial-gradient(circle at 55% 22%, rgba(255,255,205,.08) 0%, transparent 18%);
     border-radius: inherit;
     pointer-events: none;
 }
@@ -117,186 +124,206 @@
    AUTHENTIC PONDU / SAKA-SAKA (cassava leaves)
 ====================================================== */
 
-.pondu{
-    position:absolute;
-    left: 15px;
-    bottom: 5px;
-    width: 230px;
-    height: 100px;
+.pondu {
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78%;
+    height: 42%;
     z-index: 8;
+    
+    background: 
+        radial-gradient(circle at 30% 30%, #4e6b27 0%, #41561f 45%, #2b3513 100%),
+        radial-gradient(circle at 70% 55%, #556f28 0%, transparent 50%),
+        linear-gradient(135deg, #556f28 0%, #273114 100%);
+    border-radius: 45% 45% 55% 55% / 60% 60% 35% 35%;
+    
+    box-shadow: 
+        inset 0px 10px 20px rgba(0,0,0,0.48),
+        inset -5px -5px 15px rgba(0,0,0,0.35),
+        0 8px 16px rgba(0,0,0,0.24);
+    
+    filter: blur(0.2px);
 }
 
-.pondu span{
-    position:absolute;
-    background:
-        radial-gradient(
-            ellipse,
-            #4a6b2a,
-            #1f3010 70%
-        );
-    border-radius: 45%;
-    box-shadow:
-        inset 3px 4px 6px rgba(255,255,255,.12),
-        inset -4px -6px 8px rgba(0,0,0,.45);
+.pondu span {
+    position: absolute;
+    display: block;
+    background: radial-gradient(circle at 40% 40%, #6f8f3c 0%, #31400f 90%);
+    border-radius: 50% 40% 45% 50%;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,.28);
+    opacity: .95;
 }
 
-.pondu span:nth-child(1){
-    width: 75px;
-    height: 42px;
-    left: 5px;
-    top: 25px;
-    transform: rotate(-15deg);
-}
-
-.pondu span:nth-child(2){
-    width: 90px;
-    height: 48px;
-    left: 40px;
-    top: 5px;
-    transform: rotate(12deg);
-}
-
-.pondu span:nth-child(3){
-    width: 70px;
-    height: 40px;
-    left: 85px;
-    top: 35px;
+.leaf-one {
+    width: 28%;
+    height: 18%;
+    top: 8%;
+    left: 8%;
     transform: rotate(-18deg);
 }
 
-.pondu span:nth-child(4){
-    width: 60px;
-    height: 35px;
-    left: 130px;
-    top: 15px;
+.leaf-two {
+    width: 24%;
+    height: 20%;
+    top: 12%;
+    right: 12%;
+    transform: rotate(14deg);
+}
+
+.leaf-three {
+    width: 22%;
+    height: 14%;
+    bottom: 10%;
+    left: 15%;
+    transform: rotate(5deg);
+}
+
+.leaf-four {
+    width: 26%;
+    height: 16%;
+    bottom: 16%;
+    right: 10%;
+    transform: rotate(-6deg);
+}
+
+.leaf-five {
+    width: 18%;
+    height: 12%;
+    left: 42%;
+    bottom: 8%;
     transform: rotate(8deg);
 }
 
-.pondu span:nth-child(5){
-    width: 55px;
-    height: 30px;
-    left: 155px;
-    top: 40px;
-    transform: rotate(-12deg);
+/* Add the lumpy, pulled-apart leafy texture on top */
+.pondu::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -5%;
+    width: 110%;
+    height: 130%;
+    background: 
+        radial-gradient(ellipse at 20% 20%, #6b8f36 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 30%, #7a9e3e 0%, transparent 40%),
+        radial-gradient(ellipse at 50% 80%, #4c6628 0%, transparent 60%);
+    border-radius: 60% 40% 50% 50% / 80% 60% 40% 40%;
+    z-index: 1;
+    opacity: 0.9;
 }
 
-/* ======================================================
-   SMOKED FISH - PROMINENT & ON TOP OF EVERYTHING
-====================================================== */
-
-.fish{
-    position:absolute;
-    right: 15px;
-    bottom: 50px;
-    width: 165px;
-    height: 80px;
-    z-index: 20; /* HIGHER than everything except steam */
-    
-    animation: fish-float 4s ease-in-out infinite;
-}
-
-.fish-body{
-    position:absolute;
-    right: 0;
-    bottom: 0;
-    width: 135px;
-    height: 58px;
-    
-    background:
-        radial-gradient(
-            ellipse at 30% 40%,
-            #c4a86a,
-            #8a6e3a 50%,
-            #5c4520 90%
-        );
-    
-    border-radius:
-        60% 40% 30% 70%
-        /
-        70% 60% 40% 30%;
-    
-    box-shadow:
-        inset 0 8px 12px rgba(255,215,150,.2),
-        inset 0 -10px 15px rgba(0,0,0,.3),
-        0 5px 15px rgba(0,0,0,.2);
-}
-
-/* Smoked skin texture */
-.fish-body::after{
-    content: "";
-    position:absolute;
-    inset: 8px;
-    background:
-        repeating-linear-gradient(
-            0deg,
-            transparent 0px,
-            transparent 5px,
-            rgba(255,220,180,.06) 6px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            transparent 0px,
-            transparent 8px,
-            rgba(255,200,150,.04) 9px
-        );
+/* Add tiny oil pools/specks (the yellow/orange palm oil bits) */
+.pondu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 25% 40%, rgba(255, 200, 50, 0.6) 0%, transparent 12%),
+        radial-gradient(circle at 75% 60%, rgba(230, 170, 30, 0.4) 0%, transparent 15%),
+        radial-gradient(circle at 60% 20%, rgba(240, 190, 40, 0.3) 0%, transparent 8%);
+    z-index: 2;
+    mix-blend-mode: overlay;
     border-radius: inherit;
 }
 
-.fish-tail{
-    position:absolute;
-    right: 130px;
-    bottom: 15px;
-    width: 42px;
-    height: 32px;
-    
-    background: 
-        linear-gradient(180deg, #6a4f28, #4a3420);
-    border-radius:
-        0 80% 80% 0
-        /
-        0 70% 70% 0;
-    
-    transform: rotate(-18deg);
-    box-shadow: inset -3px 0 8px rgba(0,0,0,.3);
+/* ======================================================
+   SMOKED FISH - RESTING ON THE PLACEMAT
+====================================================== */
+
+.fish {
+    position: absolute;
+    bottom: 12%;
+    right: 14%;
+    width: 142px;
+    height: 58px;
+    z-index: 22;
+    transform: rotate(-12deg);
 }
 
-/* Fish eye */
-.fish-eye{
+.fish-body {
     position: absolute;
-    right: 100px;
-    top: 22px;
-    width: 10px;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 30% 40%, #c4a86a 0%, #8a6e3a 40%, #4a2d15 100%);
+    border-radius: 60% 40% 40% 60% / 80% 60% 60% 80%;
+    
+    box-shadow: 
+        inset 0px 8px 14px rgba(0,0,0,0.55),
+        inset -12px 0px 18px rgba(0,0,0,0.45),
+        0 12px 18px rgba(0,0,0,0.24);
+    
+    border: 1px solid rgba(0,0,0,0.22);
+}
+
+.fish-body::before {
+    content: '';
+    position: absolute;
+    left: 18%;
+    top: 55%;
+    width: 62%;
     height: 10px;
-    background: radial-gradient(circle at 40% 40%, #fff, #1a1a1a 60%);
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    border-radius: 999px;
+    background: rgba(0,0,0,.14);
+    transform: rotate(-6deg);
 }
 
-.fish-eye::after{
-    content: "";
+.fish-eye {
     position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 4px;
-    height: 4px;
-    background: rgba(255,255,255,.8);
+    top: 24%;
+    left: 22%;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    background: #f5f2e6;
+    box-shadow: inset 0 0 0 2px #3f2b1c, 0 0 0 3px rgba(255,255,255,.75);
+    z-index: 3;
 }
 
-.fish-highlight{
-    position:absolute;
-    right: 35px;
-    bottom: 35px;
-    width: 55px;
-    height: 22px;
-    background:
-        radial-gradient(
-            ellipse,
-            rgba(255,220,170,.25),
-            transparent
-        );
-    filter: blur(4px);
+/* The highlight where the light catches the dried skin */
+.fish-highlight {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 40%;
+    height: 25%;
+    background: radial-gradient(ellipse at center, rgba(210, 180, 130, 0.6) 0%, transparent 70%);
     border-radius: 50%;
+    filter: blur(3px);
+    z-index: 2;
+}
+
+/* The tail fin */
+.fish-tail {
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 45px;
+    height: 35px;
+    background: radial-gradient(ellipse at 0% 50%, #2e1f12 0%, #0f0a05 100%);
+    border-radius: 0 50% 50% 0 / 0 100% 100% 0;
+    transform-origin: left center;
+    transform: rotate(15deg);
+    box-shadow: inset -5px 0px 10px rgba(0,0,0,0.9);
+    z-index: 1;
+}
+
+/* Flaky skin texture pieces */
+.fish::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: -8%;
+    width: 18px;
+    height: 10px;
+    background: #5a4030;
+    border-radius: 20% 80% 50% 50%;
+    transform: rotate(25deg);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+    opacity: 0.7;
 }
 
 /* ======================================================
@@ -356,45 +383,7 @@
     }
 }
 
-@keyframes fish-float{
-    0%, 100%{ 
-        transform: translateY(0) rotate(0deg);
-    }
-    50%{ 
-        transform: translateY(-4px) rotate(1deg);
-    }
-}
-
 @keyframes palm-glow{
     0%, 100%{ opacity: 0.8; }
     50%{ opacity: 1; }
-}
-
-/* ======================================================
-   FIX: ENSURE PROPER Z-INDEX LAYERING
-====================================================== */
-
-/* Make sure everything is layered correctly */
-.bowl-inner{
-    z-index: 5;
-}
-
-.fufu{
-    z-index: 10;
-}
-
-.pondu{
-    z-index: 8;
-}
-
-.fish{
-    z-index: 20;
-}
-
-.palm-oil{
-    z-index: 12;
-}
-
-.steam{
-    z-index: 30;
 }

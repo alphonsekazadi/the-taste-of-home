@@ -27,7 +27,9 @@
 
 .window,
 .radio,
-.basket{
+.basket,
+.glass,
+.spoon{
 
     filter:
 
@@ -62,7 +64,35 @@
     );
 
 }
+/* Subtle background objects */
 
+.radio,
+.basket,
+.glass,
+.spoon{
+    opacity:.38;
+    transform: scale(.82) translate(var(--mouse-x), var(--mouse-y));
+}
+
+.radio{
+    left:260px;
+    bottom:72px;
+}
+
+.basket{
+    left:56px;
+    bottom:94px;
+}
+
+.glass{
+    right:88px;
+    bottom:98px;
+}
+
+.spoon{
+    right:170px;
+    bottom:112px;
+}
 /* ======================================================
    ATMOSPHERE
 ====================================================== */

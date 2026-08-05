@@ -19,14 +19,14 @@ Steam animation
 
     left:50%;
 
-    bottom:43%;
+    bottom:44%;
 
     transform:translateX(-50%);
 
 
-    width:260px;
+    width:280px;
 
-    height:220px;
+    height:240px;
 
 
     z-index:30;
@@ -47,9 +47,9 @@ Steam animation
     bottom:0;
 
 
-    width:45px;
+    width:52px;
 
-    height:160px;
+    height:180px;
 
 
     border-radius:50%;
@@ -57,31 +57,20 @@ Steam animation
 
     background:
 
-
-    linear-gradient(
-
-        90deg,
-
-        transparent,
-
-        rgba(255,255,255,.55),
-
-        transparent
-
-    );
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,.55) 0%, rgba(255,255,255,.05) 70%, transparent 100%);
 
 
     filter:
 
-    blur(12px);
+    blur(14px);
 
 
-    opacity:.35;
+    opacity:.5;
 
 
     animation:
 
-    steam-rise 7s infinite ease-in-out;
+    steam-rise 8s infinite ease-in-out;
 
 
 }
@@ -92,7 +81,9 @@ Steam animation
 
 .steam-one{
 
-    left:35px;
+    left:30px;
+
+    width:58px;
 
     animation-delay:0s;
 
@@ -104,11 +95,13 @@ Steam animation
 
 .steam-two{
 
-    left:105px;
+    left:110px;
 
-    height:190px;
+    width:64px;
 
-    animation-delay:2s;
+    height:210px;
+
+    animation-delay:1.5s;
 
 }
 
@@ -118,11 +111,13 @@ Steam animation
 
 .steam-three{
 
-    left:175px;
+    left:170px;
 
-    height:140px;
+    width:56px;
 
-    animation-delay:4s;
+    height:175px;
+
+    animation-delay:3s;
 
 }
 
