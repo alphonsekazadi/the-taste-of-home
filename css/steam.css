@@ -1,5 +1,4 @@
 /*
-
 Steam particles
 
 Steam blur
@@ -12,7 +11,6 @@ Steam animation
    WARM FOOD STEAM
 ====================================================== */
 
-
 .steam{
 
     position:absolute;
@@ -24,12 +22,12 @@ Steam animation
     transform:translateX(-50%);
 
 
-    width:280px;
+    width:360px;
 
-    height:240px;
+    height:300px;
 
 
-    z-index:30;
+    z-index:45;
 
 
 }
@@ -47,30 +45,30 @@ Steam animation
     bottom:0;
 
 
-    width:52px;
+    width:64px;
 
-    height:180px;
+    height:220px;
 
 
     border-radius:50%;
 
 
     background:
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,.92) 0%, rgba(255,255,255,.12) 60%, transparent 100%);
 
-        radial-gradient(circle at 50% 50%, rgba(255,255,255,.55) 0%, rgba(255,255,255,.05) 70%, transparent 100%);
-
+    mix-blend-mode: screen;
 
     filter:
 
-    blur(14px);
+    blur(20px);
 
 
-    opacity:.5;
+    opacity:.78;
 
 
     animation:
 
-    steam-rise 8s infinite ease-in-out;
+    steam-rise 10s infinite ease-in-out;
 
 
 }
@@ -81,27 +79,28 @@ Steam animation
 
 .steam-one{
 
-    left:30px;
+    left:20px;
 
-    width:58px;
+    width:72px;
+
+    height:240px;
 
     animation-delay:0s;
 
 }
 
 
-
 /* Center vapor */
 
 .steam-two{
 
-    left:110px;
+    left:135px;
 
-    width:64px;
+    width:78px;
 
-    height:210px;
+    height:260px;
 
-    animation-delay:1.5s;
+    animation-delay:1.2s;
 
 }
 
@@ -111,13 +110,13 @@ Steam animation
 
 .steam-three{
 
-    left:170px;
+    left:260px;
 
-    width:56px;
+    width:64px;
 
-    height:175px;
+    height:220px;
 
-    animation-delay:3s;
+    animation-delay:2.6s;
 
 }
 
@@ -139,7 +138,7 @@ Steam animation
 
         translateX(0)
 
-        scale(.8);
+        scale(.85);
 
 
         opacity:0;
@@ -150,7 +149,7 @@ Steam animation
 
     20%{
 
-        opacity:.45;
+        opacity:.6;
 
     }
 
@@ -161,11 +160,11 @@ Steam animation
 
         transform:
 
-        translateY(-60px)
+        translateY(-80px)
 
-        translateX(20px)
+        translateX(18px)
 
-        scale(1.2);
+        scale(1.25);
 
 
     }
@@ -177,17 +176,18 @@ Steam animation
 
         transform:
 
-        translateY(-150px)
+        translateY(-220px)
 
-        translateX(-15px)
+        translateX(-25px)
 
-        scale(1.4);
+        scale(1.6);
 
 
         opacity:0;
 
 
     }
+
 
 
 }
