@@ -73,7 +73,7 @@ The artwork adapts to desktop, tablet, and mobile screens while preserving its c
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 ---
 
