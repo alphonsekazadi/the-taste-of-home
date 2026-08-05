@@ -16,7 +16,102 @@ Transitions
 
 }
 
+.hero h1,
+.subtitle,
+.divider,
+blockquote,
+.bowl,
+.pondu,
+.fish,
+.palm-oil{
+    opacity:0;
+    animation-fill-mode: both;
+}
 
+.hero h1{
+    animation: fade-in-down 1s ease-out 0.2s both;
+}
+
+.subtitle{
+    animation: fade-in-up 1s ease-out 0.4s both;
+}
+
+.divider{
+    animation: fade-in-up 1s ease-out 0.55s both;
+}
+
+blockquote{
+    animation: fade-in-up 1s ease-out 0.7s both;
+}
+
+.bowl{
+    animation: bowl-rise 1.1s ease-out 0.9s both;
+}
+
+.palm-oil{
+    animation: side-dish-pop 1s ease-out 1.1s both;
+}
+
+.pondu{
+    animation: side-dish-pop 1s ease-out 1.2s both;
+}
+
+.fish{
+    animation: side-dish-pop 1s ease-out 1.3s both;
+}
+
+.steam{
+    animation: steam-hover 12s ease-in-out infinite alternate;
+}
+
+@keyframes fade-in-down{
+    0%{
+        opacity:0;
+        transform: translateY(-18px) scale(.98);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fade-in-up{
+    0%{
+        opacity:0;
+        transform: translateY(18px) scale(.98);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes bowl-rise{
+    0%{
+        opacity:0;
+        transform: translate(-50%, 30px) scale(.96);
+    }
+    100%{
+        opacity:1;
+        transform: translate(-50%, 0) scale(1);
+    }
+}
+
+@keyframes side-dish-pop{
+    0%{
+        opacity:0;
+        transform: translateY(28px) scale(.92);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes steam-hover{
+    0%{ transform: translateY(0); }
+    100%{ transform: translateY(-8px); }
+}
 
 @keyframes fufu-breathe{
 
