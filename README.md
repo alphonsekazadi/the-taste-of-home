@@ -65,16 +65,10 @@ Every element is created using CSS gradients, shadows, pseudo-elements, border-r
 
 ---
 
-## Responsive
-
-The artwork adapts to desktop, tablet, and mobile screens while preserving its composition.
-
----
-
 ## License
 
 [MIT](LICENSE)
 
 ---
 
-Made with ❤️ by Alphonse Kazadi.
+Made by Alphonse Kazadi.
