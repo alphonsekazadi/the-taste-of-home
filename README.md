@@ -77,4 +77,4 @@ The artwork adapts to desktop, tablet, and mobile screens while preserving its c
 
 ---
 
-Made with ❤️ by Alphonse Kazadi.
+Made by Alphonse Kazadi.
